@@ -56,7 +56,7 @@ class _MyAppState extends State<MyApp> {
                     icon: SizedBox(
                       height: 40,
                       width: 60,
-                      child: Image.asset('assets/images/splash.png',
+                      child: Image.asset('assets/images/letter.png',
                           fit: BoxFit.contain),
                     ),
                     label: Text(
@@ -85,7 +85,7 @@ class _MyAppState extends State<MyApp> {
                     width: 60,
                     height: 40,
                     child: Image.asset(
-                      'assets/images/splash.png',
+                      'assets/images/informal.png',
                       fit: BoxFit.contain,
                     ),
                   ),
@@ -119,7 +119,7 @@ class _MyAppState extends State<MyApp> {
                     width: 45,
                     height: 40,
                     child: Image.asset(
-                      'assets/images/splash.png',
+                      'assets/images/ex.png',
                       fit: BoxFit.contain,
                     ),
                   ),
