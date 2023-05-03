@@ -23,9 +23,12 @@ class _SplashState extends State<Splash> {
   @override
   Widget build(BuildContext context) {
     return Container(
+      color: Color.fromRGBO(117, 218, 255,
+          1), // Set the background color of the container to green
       child: Center(
         child: Container(
-          child: Text('me dofo'),
+          color: Colors.transparent,
+          child: Image.asset('assets/images/splash.png'),
         ),
       ),
     );
