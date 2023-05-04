@@ -1,4 +1,9 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
+import 'package:french/screens/feedback.dart';
+import 'package:french/screens/translator.dart';
+import 'package:french/screens/zoom.dart';
 
 class Media extends StatefulWidget {
   const Media({Key? key}) : super(key: key);
@@ -14,6 +19,26 @@ class _MediaState extends State<Media> {
       length: 2,
       child: Scaffold(
         appBar: AppBar(
+          actions: [
+            IconButton(
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: ((context) => Translator())));
+                },
+                icon: Icon(Icons.translate_outlined)),
+            IconButton(
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: ((context) => Feedbacks())));
+                },
+                icon: Icon(Icons.feedback_outlined)),
+            IconButton(
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: ((context) => About())));
+                },
+                icon: Icon(Icons.info_outline)),
+          ],
           bottom: const TabBar(
             indicatorColor: Colors.white,
             tabs: [
@@ -28,10 +53,7 @@ class _MediaState extends State<Media> {
           title: const Text('Sample images of letter'),
         ),
         body: const TabBarView(
-          children: [
-            Sider(),
-            Text('data'),
-          ],
+          children: [Sider(), Zooma()],
         ),
       ),
     );
@@ -76,7 +98,7 @@ class Sider extends StatelessWidget {
                 thickness: 10,
               ),
               Image.asset(
-                'assets/images/F1.png',
+                'assets/images/F2.png',
                 fit: BoxFit.cover,
               ),
               const SizedBox(

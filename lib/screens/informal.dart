@@ -2,6 +2,7 @@
 
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:french/screens/media.dart';
 import 'config.dart';
 import 'package:french/main.dart';
 
@@ -166,9 +167,13 @@ class _ParasState extends State<Paras> {
           //Last intro
           //mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
           TextSpan(
-              recognizer: TapGestureRecognizer()..onTap = () {},
+              recognizer: TapGestureRecognizer()
+                ..onTap = () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: ((context) => Media())));
+                },
               text:
-                  'Go to the media section to view sample of the informal letter writing.',
+                  'Go to the media section to view sample of the informal letter writing images.',
               style: TextStyle(color: Colors.blue))
         ],
       ),

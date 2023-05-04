@@ -5,6 +5,8 @@ import 'package:flutter/material.dart';
 import 'config.dart';
 import 'package:french/main.dart';
 
+import 'media.dart';
+
 class Formals extends StatefulWidget {
   const Formals({super.key});
 
@@ -193,9 +195,13 @@ class _ParasState extends State<Paras> {
           //Last intro
           //mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
           TextSpan(
-              recognizer: TapGestureRecognizer()..onTap = () {},
+              recognizer: TapGestureRecognizer()
+                ..onTap = () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: ((context) => Media())));
+                },
               text:
-                  'Go to the template section to view sample of the formal letter writing images.\n',
+                  'Go to the media section to view sample of the formal letter writing images.\n',
               style: TextStyle(color: Colors.blue)),
           TextSpan(
             text: '\nExample of the Formal letter',

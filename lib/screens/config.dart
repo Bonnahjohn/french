@@ -68,3 +68,7 @@ String Tip9 =
 
 String Tip10 =
     "Signature: Sign your full name in ink below the closing.\n\nBy including all of these features in your French formal letter, you can ensure that your message is clear, professional, and effective.";
+
+/// about usmmmmmmmmmmmmmmmmmmmm
+String myNote =
+    "Dear Users,\n \n We are delighted to present to you French letter writing, a revolutionary French learning app that is here to make learning French easier and more fun than ever before! Our team of experienced educators and developers has worked tirelessly to create an app that is tailored to your needs and preferences.\n \n At French letter writing, we believe that learning a language should be a joyful experience, and that is why our app is designed to be intuitive, interactive, and engaging. With French letter writing, you will learn French at your own pace, in your own time, and in a way that suits your learning style. Whether you are a complete beginner or an advanced learner, we have something for everyone.\nAt French letter writing, we are committed to helping you achieve your language learning goals, and we will be with you every step of the way. Our team of experts is always available to answer your questions and provide you with personalized support to ensure that you get the most out of our app.So, whether you are looking to learn French for work, travel, or just for fun, French letter writing is the perfect app for you.";
