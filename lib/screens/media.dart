@@ -4,6 +4,9 @@ import 'package:flutter/material.dart';
 import 'package:french/screens/feedback.dart';
 import 'package:french/screens/translator.dart';
 import 'package:french/screens/zoom.dart';
+import 'package:zoom_widget/zoom_widget.dart';
+
+import 'formal.dart';
 
 class Media extends StatefulWidget {
   const Media({Key? key}) : super(key: key);
@@ -86,9 +89,15 @@ class Sider extends StatelessWidget {
                 height: 30,
                 thickness: 10,
               ),
-              Image.asset(
-                'assets/images/F1.png',
-                fit: BoxFit.cover,
+              GestureDetector(
+                child: Image.asset(
+                  'assets/images/F2.png',
+                  fit: BoxFit.cover,
+                ),
+                onDoubleTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: ((context) => Dashs())));
+                },
               ),
               const SizedBox(
                 height: 30,
@@ -98,9 +107,15 @@ class Sider extends StatelessWidget {
                 height: 30,
                 thickness: 10,
               ),
-              Image.asset(
-                'assets/images/F2.png',
-                fit: BoxFit.cover,
+              GestureDetector(
+                child: Image.asset(
+                  'assets/images/F1.png',
+                  fit: BoxFit.cover,
+                ),
+                onDoubleTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: ((context) => Dash())));
+                },
               ),
               const SizedBox(
                 height: 70,
@@ -109,6 +124,79 @@ class Sider extends StatelessWidget {
           ),
         ),
       ],
+    );
+  }
+}
+
+//mmmmmmmmmmmmmmmmmmmmmm
+//
+//first mmmmmmmmmmmmmmmmmmm
+class Dash extends StatelessWidget {
+  const Dash({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Color.fromRGBO(117, 218, 255, 1),
+        title: Text('Zoomable Image'),
+      ),
+      body: Center(
+          child: Padding(
+        padding: EdgeInsets.symmetric(vertical: 12),
+        child: Zoom(
+          initTotalZoomOut: true,
+          child: Image.asset(
+            'assets/images/F1.png',
+            fit: BoxFit.cover,
+          ),
+        ),
+      )),
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.transparent,
+        elevation: 10,
+        onPressed: () {
+          Navigator.push(
+              context, MaterialPageRoute(builder: ((context) => Formals())));
+        },
+        child: Image.asset('assets/images/letter.png',
+            width: 60, height: 60, fit: BoxFit.contain),
+      ),
+    );
+  }
+}
+
+class Dashs extends StatelessWidget {
+  const Dashs({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Color.fromRGBO(117, 218, 255, 1),
+        title: Text('Zoomable Image'),
+      ),
+      body: Center(
+          child: Padding(
+        padding: EdgeInsets.symmetric(vertical: 12),
+        child: Zoom(
+          initTotalZoomOut: true,
+          child: Image.asset(
+            'assets/images/F2.png',
+            fit: BoxFit.cover,
+          ),
+        ),
+      )),
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.transparent,
+        elevation: 10,
+        onPressed: () {
+          Navigator.push(
+              context, MaterialPageRoute(builder: ((context) => Formals())));
+        },
+        child: Image.asset('assets/images/letter.png',
+            width: 60, height: 60, fit: BoxFit.contain),
+      ),
     );
   }
 }

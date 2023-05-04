@@ -37,6 +37,7 @@ dependencies:
   path_provider: ^2.0.14
   url_launcher: ^6.1.10
   translator: ^0.1.7
+  zoom_widget: ^2.0.1
 
 dev_dependencies:
   flutter_test:
