@@ -16,7 +16,7 @@ String Guide1 =
 String Guide2 =
     'Continue with a greeting: Begin the letter with "Cher/Chère" (for a close friend) or "Salut" (for a very close friend or family member).';
 String Note =
-    "In French \"Cher\" is used to address a male recipient, while \"Chère\" is used to address a female recipient. If you are unsure about the gender of the recipient, you can use \"Cher/Chère\" followed by their first name. And it is important to note that \"Cher/Chère\" is a more formal greeting than \"Salut\", which is more casual and appropriate for very close friends or family members. If you are unsure about which greeting to use, it is best to err on the side of formality and use \"Cher/Chère\".";
+    "In French \"Cher\" is used to address a male recipient, while \"Chère\" is used to address a female recipient. If you are unsure about the gender of the recipient, you can use \"Cher/Chère\" followed by their first name. And it is important to note that \"Cher/Chère\" is a more formal greeting than \"Salut\", which is more casual and appropriate for very close friends or family members. If you are unsure about which greeting to use, it is best to  use \"Cher/Chère\".";
 
 String Guide3 =
     'Introduce yourself: In the first paragraph, introduce yourself and explain why you are writing the letter.';
@@ -32,3 +32,39 @@ String Guide5 =
 
 String Last =
     "\n\nRemember that an informal letter should reflect your personality and relationship with the person you are writing to. Have fun with it and don't be afraid to show your personality and use expressions that are unique to you and your relationship with your friend.";
+
+//mmmmmmmmmmmmmmmmmmmmm
+//formal letter introduction
+// mmmmmmmmmmmmmmmm
+
+String FormalIntro =
+    "Writing a formal letter in French can be a daunting task, but it is an important skill to have in both personal and professional settings. Formal letters are used to communicate with people you may not know well, such as employers, government officials, or business partners. They require a specific structure and language to convey respect and professionalism.\n\nIn this lesson, we will cover the essential features of a French formal letter, including the salutation, opening paragraph, body of the letter, closing paragraph, and closing. We will also discuss how to format and organize your letter for maximum clarity and effectiveness.\n\nBy the end of this lesson, you will be able to write a clear, concise, and professional formal letter in French, using appropriate language and conventions. Let's get started!\n\n When writing a formal letter in French, it is important to follow certain conventions to ensure that your message is clear and professional. Here are some vital information and tricks to keep in mind when writing a French formal letter:";
+
+String Tip1 =
+    "Writer's address: Your full name and address should be placed at the top right-hand corner of the letter.";
+
+String Tip2 =
+    "Date: The date should be placed at the top left-hand corner of the letter, right below your own contact information. The date should be written in the format \"Le [day] [month] [year]\" and should be written out in full (e.g., \"Le 4 mai 2023\").";
+String Tip3 =
+    "Recipient address: The recipient's full name, title, and address should be placed below your own address, on the left-hand side of the page.";
+
+String Tip4 =
+    "Title: The title should be placed on the line following the recipient's name and should include their honorific (e.g., \"Monsieur le Directeur\").";
+
+String Tip5 =
+    "Salutation: The salutation should be formal and should address the recipient with \"Madame\" or \"Monsieur\" followed by their last name.";
+
+String Tip6 =
+    "Opening paragraph: In the opening paragraph, clearly state the reason for writing the letter. Be concise and to the point.";
+
+String Tip7 =
+    "Body of the letter: Use formal language and be respectful and polite in your tone. Be clear and concise in your message, and use paragraphs to organize your thoughts.";
+
+String Tip8 =
+    "Closing paragraph: Summarize your message and express any final thoughts or requests. End the letter with a formal closing and your signature.";
+
+String Tip9 =
+    "Closing: The closing of a formal letter in French should be \"Je vous prie d'agréer, Madame/Monsieur, l'expression de mes salutations distinguées\" (I remain, Yours sincerely). Other appropriate closings include \"Je vous prie de croire, Madame/Monsieur, en l'assurance de mes sentiments les meilleurs\" (I remain, Yours faithfully).";
+
+String Tip10 =
+    "Signature: Sign your full name in ink below the closing.\n\nBy including all of these features in your French formal letter, you can ensure that your message is clear, professional, and effective.";

@@ -1,5 +1,6 @@
 // ignore_for_file: unused_import, prefer_const_constructors, prefer_const_literals_to_create_immutables
 
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'config.dart';
 import 'package:french/main.dart';
@@ -161,6 +162,14 @@ class _ParasState extends State<Paras> {
           TextSpan(
             text: Last,
           ),
+          //mmmmmmmmmmmmmmmmmmmmmmmmmmmmmm mmm
+          //Last intro
+          //mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+          TextSpan(
+              recognizer: TapGestureRecognizer()..onTap = () {},
+              text:
+                  'Go to the media section to view sample of the informal letter writing.',
+              style: TextStyle(color: Colors.blue))
         ],
       ),
     );

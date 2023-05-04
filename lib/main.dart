@@ -2,7 +2,9 @@
 
 import 'package:flutter/material.dart';
 import 'package:french/screens/config.dart';
+import 'package:french/screens/formal.dart';
 import 'package:french/screens/informal.dart';
+import 'package:french/screens/media.dart';
 import 'package:french/screens/splash.dart';
 
 void main() => runApp(const MaterialApp(
@@ -53,7 +55,10 @@ class _MyAppState extends State<MyApp> {
                         ),
                         backgroundColor: MaterialStatePropertyAll(
                             Color.fromRGBO(117, 218, 255, 1))),
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: ((context) => Formals())));
+                    },
                     icon: SizedBox(
                       height: 40,
                       width: 60,
@@ -104,40 +109,7 @@ class _MyAppState extends State<MyApp> {
                 SizedBox(
                   height: 20,
                 ),
-                //mmmmmmmmmmmmmmmmmmmmmmmm
-                //Writing Exercisesbutton
-                //mmmmmmmmmmmmmmmmmmmmm
-                TextButton.icon(
-                  style: ButtonStyle(
-                    backgroundColor: MaterialStateProperty.all<Color>(
-                      Color.fromRGBO(117, 218, 255, 1),
-                    ),
-                    shape: MaterialStateProperty.all<OutlinedBorder>(
-                      RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                    ),
-                  ),
-                  onPressed: () {},
-                  icon: SizedBox(
-                    width: 45,
-                    height: 40,
-                    child: Image.asset(
-                      'assets/images/ex.png',
-                      fit: BoxFit.contain,
-                    ),
-                  ),
-                  label: Text(
-                    'Writing Exercises',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 18,
-                    ),
-                  ),
-                ),
-                SizedBox(
-                  height: 20,
-                ),
+
                 //mmmmmmmmmmmmmmmmmmmmmmmm
                 //template button
                 //mmmmmmmmmmmmmmmmmmmmm
@@ -152,17 +124,20 @@ class _MyAppState extends State<MyApp> {
                       ),
                     ),
                   ),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: ((context) => Media())));
+                  },
                   icon: SizedBox(
-                    width: 95,
+                    width: 135,
                     height: 40,
                     child: Image.asset(
-                      'assets/images/splash.png',
+                      'assets/images/gallery.png',
                       fit: BoxFit.contain,
                     ),
                   ),
                   label: Text(
-                    'Templates',
+                    'Media',
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 18,
