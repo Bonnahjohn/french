@@ -1,7 +1,8 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, unnecessary_import
 
 import 'package:flutter/material.dart';
 import 'package:french/screens/config.dart';
+import 'package:french/screens/informal.dart';
 import 'package:french/screens/splash.dart';
 
 void main() => runApp(const MaterialApp(
@@ -80,7 +81,10 @@ class _MyAppState extends State<MyApp> {
                       ),
                     ),
                   ),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: ((context) => Informals())));
+                  },
                   icon: SizedBox(
                     width: 60,
                     height: 40,

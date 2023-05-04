@@ -37,33 +37,3 @@ class _SplashState extends State<Splash> {
   }
 }
 
-class Home extends StatefulWidget {
-  const Home({super.key});
-
-  @override
-  State<Home> createState() => _HomeState();
-}
-
-class _HomeState extends State<Home> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-        appBar: AppBar(
-          backgroundColor: Color.fromRGBO(117, 218, 255, 1),
-        ),
-        body: SafeArea(
-            child: SingleChildScrollView(
-          child: Padding(
-            padding: EdgeInsets.all(16.0),
-            child: Column(
-              children: [
-                Text(
-                  Welcome,
-                  style: Theme.of(context).textTheme.bodyMedium,
-                )
-              ],
-            ),
-          ),
-        )));
-  }
-}
