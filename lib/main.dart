@@ -129,7 +129,7 @@ class _MyAppState extends State<MyApp> {
                         MaterialPageRoute(builder: ((context) => Media())));
                   },
                   icon: SizedBox(
-                    width: 135,
+                    width: 70,
                     height: 40,
                     child: Image.asset(
                       'assets/images/gallery.png',
@@ -137,7 +137,7 @@ class _MyAppState extends State<MyApp> {
                     ),
                   ),
                   label: Text(
-                    'Media',
+                    'Letter Samples',
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 18,
