@@ -14,7 +14,7 @@ class Translator extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        backgroundColor: const Color.fromRGBO(100, 149, 237, 1),
+        backgroundColor: const Color.fromRGBO(117, 218, 255, 1),
         title: const Text('Translator'),
         // ignore: prefer_const_constructors
       ),

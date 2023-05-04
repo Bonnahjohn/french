@@ -19,6 +19,7 @@ class _MediaState extends State<Media> {
       length: 2,
       child: Scaffold(
         appBar: AppBar(
+          backgroundColor: Color.fromRGBO(117, 218, 255, 1),
           actions: [
             IconButton(
                 onPressed: () {
