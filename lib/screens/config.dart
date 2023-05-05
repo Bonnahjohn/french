@@ -41,15 +41,15 @@ String FormalIntro =
     "Writing a formal letter in French can be a daunting task, but it is an important skill to have in both personal and professional settings. Formal letters are used to communicate with people you may not know well, such as employers, government officials, or business partners. They require a specific structure and language to convey respect and professionalism.\n\nIn this lesson, we will cover the essential features of a French formal letter, including the salutation, opening paragraph, body of the letter, closing paragraph, and closing. We will also discuss how to format and organize your letter for maximum clarity and effectiveness.\n\nBy the end of this lesson, you will be able to write a clear, concise, and professional formal letter in French, using appropriate language and conventions. Let's get started!\n\n When writing a formal letter in French, it is important to follow certain conventions to ensure that your message is clear and professional. Here are some vital information and tricks to keep in mind when writing a French formal letter:";
 
 String Tip1 =
-    "Writer's address: Your full name and address should be placed at the top right-hand corner of the letter.";
+    "Writer's address: Your full name and address should be placed at the top left-hand corner of the letter.";
 
 String Tip2 =
-    "Date: The date should be placed at the top left-hand corner of the letter, right below your own contact information. The date should be written in the format \"Le [day] [month] [year]\" and should be written out in full (e.g., \"Le 4 mai 2023\").";
+    "Include the date in a French informal letter, you can simply write the date at the top of your letter, aligned to the right-hand side of the page. The standard format for writing the date in French is \"day/month/year\". For example, if you were writing the letter on May 4, 2023, you would write the date as \"4 mai 2023\" in French.";
 String Tip3 =
     "Recipient address: The recipient's full name, title, and address should be placed below your own address, on the left-hand side of the page.";
 
 String Tip4 =
-    "Title: The title should be placed on the line following the recipient's name and should include their honorific (e.g., \"Monsieur le Directeur\").";
+    "Title: The title should be placed on the left side of the paper andthe recipient's name and should include their honorific (e.g., \"Monsieur le Directeur\").";
 
 String Tip5 =
     "Salutation: The salutation should be formal and should address the recipient with \"Madame\" or \"Monsieur\" followed by their last name.";
@@ -72,3 +72,6 @@ String Tip10 =
 /// about usmmmmmmmmmmmmmmmmmmmm
 String myNote =
     "Dear Users,\n \n We are delighted to present to you French letter writing, a revolutionary French learning app that is here to make learning French easier and more fun than ever before! Our team of experienced educators and developers has worked tirelessly to create an app that is tailored to your needs and preferences.\n \n At French letter writing, we believe that learning a language should be a joyful experience, and that is why our app is designed to be intuitive, interactive, and engaging. With French letter writing, you will learn French at your own pace, in your own time, and in a way that suits your learning style. Whether you are a complete beginner or an advanced learner, we have something for everyone.\nAt French letter writing, we are committed to helping you achieve your language learning goals, and we will be with you every step of the way. Our team of experts is always available to answer your questions and provide you with personalized support to ensure that you get the most out of our app.So, whether you are looking to learn French for work, travel, or just for fun, French letter writing is the perfect app for you.";
+
+String Tip11 =
+    "Recipient address: The recipient's full name, title, and address should be placed  on the right-hand side of the page.";
