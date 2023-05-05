@@ -49,7 +49,7 @@ String Tip3 =
     "Recipient address: The recipient's full name, title, and address should be placed below your own address, on the left-hand side of the page.";
 
 String Tip4 =
-    "Title: The title should be placed on the left side of the paper andthe recipient's name and should include their honorific (e.g., \"Monsieur le Directeur\").";
+    "Title: The title should be placed on the left side of the paper and the recipient's name and should include their honorific (e.g., \"Monsieur le Directeur\").";
 
 String Tip5 =
     "Salutation: The salutation should be formal and should address the recipient with \"Madame\" or \"Monsieur\" followed by their last name.";
@@ -75,3 +75,6 @@ String myNote =
 
 String Tip11 =
     "Recipient address: The recipient's full name, title, and address should be placed  on the right-hand side of the page.";
+
+String Tip12 =
+    "In a French formal letter, the subject line (la ligne d'objet) typically comes after the recipient's address and before the salutation. The subject line should be concise and clearly state the purpose of the letter. For example, \"Demande de renseignements sur les programmes d'études\" (Request for information about study programs).";

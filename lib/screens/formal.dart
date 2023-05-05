@@ -97,10 +97,6 @@ class _ParasState extends State<Paras> {
           TextSpan(
             text: Tip11,
           ),
-
-          //mmmmmmmmmmmmmmmmmmmmmmmmmmmmmm mmm
-          //Guide 4
-          //mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
           TextSpan(
             text: '\n4.',
             style: TextStyle(
@@ -109,12 +105,12 @@ class _ParasState extends State<Paras> {
                 color: Colors.amber),
           ),
           TextSpan(
-            text: Guide3,
+            text: Tip12,
           ),
+
           //mmmmmmmmmmmmmmmmmmmmmmmmmmmmmm mmm
           //Guide 5
           //mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
-
           TextSpan(
             text: '\n5.',
             style: TextStyle(
@@ -125,6 +121,7 @@ class _ParasState extends State<Paras> {
           TextSpan(
             text: Tip4,
           ),
+
           //mmmmmmmmmmmmmmmmmmmmmmmmmmmmmm mmm
           //Guide 6
           TextSpan(
@@ -165,7 +162,7 @@ class _ParasState extends State<Paras> {
           TextSpan(
             text: Tip7,
           ), //mmmmmmmmmmmmmmmmmmmmmmmmmmmmmm mmm
-          //Guide 8
+          //Guide 9
           //mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
           TextSpan(
             text: '\n9.',
