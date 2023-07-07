@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.Second">
+    package="com.Seconders">
     <uses-permission android:name="android.permission.INTERNET"/>
    <application
         android:label="French Letter Writing"
@@ -32,5 +32,8 @@
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
+             <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-9379469464236253~6199272066"/>
     </application>
 </manifest>

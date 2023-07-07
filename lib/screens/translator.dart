@@ -3,8 +3,9 @@
 import 'package:flutter/material.dart';
 
 import 'package:flutter/services.dart';
+import 'package:french/screens/feedback.dart';
 import 'package:translator/translator.dart';
-// import 'package:google_mobile_ads/google_mobile_ads.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 
 class Translator extends StatelessWidget {
   const Translator({super.key});
@@ -27,7 +28,7 @@ class Translator extends StatelessWidget {
           ),
         ),
       )),
-      // bottomNavigationBar: ADDS(),
+      bottomNavigationBar: ADDS(),
     );
   }
 }

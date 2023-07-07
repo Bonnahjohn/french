@@ -6,12 +6,17 @@ import 'package:french/screens/formal.dart';
 import 'package:french/screens/informal.dart';
 import 'package:french/screens/media.dart';
 import 'package:french/screens/splash.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 
-void main() => runApp(const MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: '',
-      home: Splash(),
-    ));
+void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  MobileAds.instance.initialize();
+  runApp(MaterialApp(
+    title: '',
+    debugShowCheckedModeBanner: false,
+    home: Splash(),
+  ));
+}
 
 class MyApp extends StatefulWidget {
   const MyApp({super.key});

@@ -2,9 +2,10 @@
 
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:french/screens/feedback.dart';
 import 'config.dart';
 import 'package:french/main.dart';
-
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'media.dart';
 
 class Formals extends StatefulWidget {
@@ -18,29 +19,31 @@ class _FormalsState extends State<Formals> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          backgroundColor: Color.fromRGBO(117, 218, 255, 1),
-          title: Text('Formal Letter'),
-        ),
-        body: SafeArea(
-            child: SingleChildScrollView(
-          child: Padding(
-            padding: EdgeInsets.all(12.0),
-            child: Column(
-              children: [
-                SelectableText(
-                  FormalIntro,
-                  style: TextStyle(fontSize: 16),
-                ),
-                Paras(),
-                SizedBox(
-                  height: 60,
-                ),
-                Sample()
-              ],
-            ),
+      appBar: AppBar(
+        backgroundColor: Color.fromRGBO(117, 218, 255, 1),
+        title: Text('Formal Letter'),
+      ),
+      body: SafeArea(
+          child: SingleChildScrollView(
+        child: Padding(
+          padding: EdgeInsets.all(12.0),
+          child: Column(
+            children: [
+              SelectableText(
+                FormalIntro,
+                style: TextStyle(fontSize: 16),
+              ),
+              Paras(),
+              SizedBox(
+                height: 60,
+              ),
+              Sample()
+            ],
           ),
-        )));
+        ),
+      )),
+      bottomNavigationBar: ADDS(),
+    );
   }
 }
 

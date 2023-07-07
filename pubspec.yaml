@@ -38,6 +38,8 @@ dependencies:
   url_launcher: ^6.1.10
   translator: ^0.1.7
   zoom_widget: ^2.0.1
+  google_mobile_ads: ^3.0.0
+  change_app_package_name: ^1.1.0
 
 dev_dependencies:
   flutter_test:

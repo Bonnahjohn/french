@@ -2,6 +2,7 @@
 
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import 'config.dart';
@@ -60,60 +61,10 @@ class Feedbacks extends StatelessWidget {
           ),
         ),
       )),
+      bottomNavigationBar: ADDS(),
     );
   }
 }
-
-// class ADDS extends StatefulWidget {
-//   const ADDS({super.key});
-
-//   @override
-//   State<ADDS> createState() => _ADDSState();
-// }
-
-// class _ADDSState extends State<ADDS> {
-//   late BannerAd _bannerAd;
-//   bool _isAdLoaded = false;
-
-//   @override
-//   void initState() {
-//     super.initState();
-//     _initBannerAd();
-//   }
-
-//   _initBannerAd() {
-//     _bannerAd = BannerAd(
-//         size: AdSize.banner,
-//         adUnitId: 'ca-app-pub-9379469464236253/2342859552',
-//         listener: BannerAdListener(
-//           onAdLoaded: (ad) {
-//             setState(() {
-//               _isAdLoaded = true;
-//             });
-//           },
-//           onAdFailedToLoad: (ad, error) {},
-//         ),
-//         request: AdRequest());
-//     _bannerAd.load();
-//   }
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return Container(
-//       width: 100,
-//       height: 50,
-//       child: _isAdLoaded
-//           ? Container(
-//               height: _bannerAd.size.height.toDouble(),
-//               width: _bannerAd.size.width.toDouble(),
-//               child: AdWidget(ad: _bannerAd),
-//             )
-//           : const SizedBox(
-//               height: 50,
-//             ),
-//     );
-//   }
-// }
 
 class About extends StatelessWidget {
   const About({super.key});
@@ -159,58 +110,58 @@ class About extends StatelessWidget {
           ),
         ),
       )),
-      // bottomNavigationBar: ADDS(),
+      bottomNavigationBar: ADDS(),
     );
   }
 }
 
-// class ADDS extends StatefulWidget {
-//   const ADDS({super.key});
+class ADDS extends StatefulWidget {
+  const ADDS({super.key});
 
-//   @override
-//   State<ADDS> createState() => _ADDSState();
-// }
+  @override
+  State<ADDS> createState() => _ADDSState();
+}
 
-// class _ADDSState extends State<ADDS> {
-//   late BannerAd _bannerAd;
-//   bool _isAdLoaded = false;
+class _ADDSState extends State<ADDS> {
+  late BannerAd _bannerAd;
+  bool _isAdLoaded = false;
 
-//   @override
-//   void initState() {
-//     super.initState();
-//     _initBannerAd();
-//   }
+  @override
+  void initState() {
+    super.initState();
+    _initBannerAd();
+  }
 
-//   _initBannerAd() {
-//     _bannerAd = BannerAd(
-//         size: AdSize.banner,
-//         adUnitId: 'ca-app-pub-9379469464236253/2342859552',
-//         listener: BannerAdListener(
-//           onAdLoaded: (ad) {
-//             setState(() {
-//               _isAdLoaded = true;
-//             });
-//           },
-//           onAdFailedToLoad: (ad, error) {},
-//         ),
-//         request: AdRequest());
-//     _bannerAd.load();
-//   }
+  _initBannerAd() {
+    _bannerAd = BannerAd(
+        size: AdSize.banner,
+        adUnitId: 'ca-app-pub-9379469464236253/2260027051',
+        listener: BannerAdListener(
+          onAdLoaded: (ad) {
+            setState(() {
+              _isAdLoaded = true;
+            });
+          },
+          onAdFailedToLoad: (ad, error) {},
+        ),
+        request: AdRequest());
+    _bannerAd.load();
+  }
 
-//   @override
-//   Widget build(BuildContext context) {
-//     return Container(
-//       width: 100,
-//       height: 50,
-//       child: _isAdLoaded
-//           ? Container(
-//               height: _bannerAd.size.height.toDouble(),
-//               width: _bannerAd.size.width.toDouble(),
-//               child: AdWidget(ad: _bannerAd),
-//             )
-//           : SizedBox(
-//               height: 50,
-//             ),
-//     );
-//   }
-// }
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: 100,
+      height: 50,
+      child: _isAdLoaded
+          ? Container(
+              height: _bannerAd.size.height.toDouble(),
+              width: _bannerAd.size.width.toDouble(),
+              child: AdWidget(ad: _bannerAd),
+            )
+          : SizedBox(
+              height: 50,
+            ),
+    );
+  }
+}
