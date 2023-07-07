@@ -100,7 +100,7 @@ class _TreansState extends State<Treans> {
           height: 80,
         ),
         Text(
-          'Please connects to the internet everytime you want to use the translator otherwise it will not work for you.',
+          'Please connect to the internet everytime you want to use the translator otherwise it will not work for you.',
           style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
         ),
       ],

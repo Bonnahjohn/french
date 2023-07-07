@@ -35,6 +35,7 @@ class _MyAppState extends State<MyApp> {
           child: Padding(
             padding: EdgeInsets.all(16.0),
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
                 Text(
                   Welcome,

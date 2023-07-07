@@ -297,6 +297,7 @@ class _SampleState extends State<Sample> {
               Text('Votre Nom'),
             ],
           ),
+          SizedBox(height: 100)
         ],
       ),
     );

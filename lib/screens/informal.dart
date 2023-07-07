@@ -33,7 +33,7 @@ class _InformalsState extends State<Informals> {
                 ),
                 Paras(),
                 SizedBox(
-                  height: 60,
+                  height: 100,
                 )
               ],
             ),
@@ -174,7 +174,7 @@ class _ParasState extends State<Paras> {
                 },
               text:
                   'Go to the media section to view sample of the informal letter writing images.',
-              style: TextStyle(color: Colors.blue))
+              style: TextStyle(color: Colors.blue)),
         ],
       ),
     );
