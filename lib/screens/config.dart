@@ -44,7 +44,7 @@ String Tip1 =
     "Writer's address: Your full name and address should be placed at the top left-hand corner of the letter.";
 
 String Tip2 =
-    "Include the date in a French informal letter, you can simply write the date at the top of your letter, aligned to the right-hand side of the page. The standard format for writing the date in French is \"day/month/year\". For example, if you were writing the letter on May 4, 2023, you would write the date as \"4 mai 2023\" in French.";
+    "Include the date in a French formal letter, you can simply write the date at the top of your letter, aligned to the right-hand side of the page. The standard format for writing the date in French is \"day/month/year\". For example, if you were writing the letter on May 4, 2023, you would write the date as \"4 mai 2023\" in French.";
 String Tip3 =
     "Recipient address: The recipient's full name, title, and address should be placed below your own address, on the left-hand side of the page.";
 
