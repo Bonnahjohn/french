@@ -37,9 +37,6 @@ class _MyAppState extends State<MyApp> {
               title: Text('Contents'),
               centerTitle: true,
               backgroundColor: Color.fromRGBO(117, 218, 255, 1),
-              actions: [
-                IconButton(onPressed: () {}, icon: Icon(Icons.settings))
-              ],
               bottom: TabBar(indicatorColor: Colors.white, tabs: [
                 Tab(
                   child: Text('Informal Letter'),

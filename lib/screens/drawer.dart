@@ -56,7 +56,7 @@ class _BurgerState extends State<Burger> {
               color: Colors.white,
             ),
             onTap: () {
-              Navigator.pop(context);
+              Get.back();
             },
           ),
           //mmmmmmmmmmmmmmmmmmmmmm translator
@@ -108,8 +108,7 @@ class _BurgerState extends State<Burger> {
               color: Colors.white,
             ),
             onTap: () {
-              Navigator.push(
-                  context, MaterialPageRoute(builder: ((context) => About())));
+              Get.to(() => About());
             },
           ),
           //mmmmmmmmmmmm feedback
@@ -131,8 +130,7 @@ class _BurgerState extends State<Burger> {
               color: Colors.white,
             ),
             onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: ((context) => Feedbacks())));
+              Get.to(() => Feedbacks());
             },
           ),
           //mmmmmmmmmmmm Privacy policy
