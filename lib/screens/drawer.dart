@@ -1,10 +1,12 @@
-// ignore_for_file: deprecated_member_use
+// ignore_for_file: deprecated_member_use, unused_import
 
 import 'package:flutter/material.dart';
+
 import 'package:url_launcher/url_launcher.dart';
 
 import 'feedback.dart';
 import 'translator.dart';
+import 'package:get/get.dart';
 
 class Burger extends StatefulWidget {
   const Burger({super.key});
@@ -76,30 +78,7 @@ class _BurgerState extends State<Burger> {
               color: Colors.white,
             ),
             onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: ((context) => Translator())));
-            },
-          ),
-          ListTile(
-            leading: Icon(
-              Icons.settings,
-              color: Colors.white,
-              size: 30,
-            ),
-            title: Text(
-              'Settings',
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 19,
-              ),
-            ),
-            trailing: Icon(
-              Icons.arrow_forward_ios_outlined,
-              color: Colors.white,
-            ),
-            onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: ((context) => Settings())));
+              Get.to(() => Translator());
             },
           ),
 
@@ -182,21 +161,5 @@ class _BurgerState extends State<Burger> {
         ],
       ),
     );
-  }
-}
-
-// Settings file and its content  mmmmmmmmmmmmmmmmmmmm
-
-class Settings extends StatefulWidget {
-  const Settings({super.key});
-
-  @override
-  State<Settings> createState() => _SettingsState();
-}
-
-class _SettingsState extends State<Settings> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold();
   }
 }

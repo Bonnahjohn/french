@@ -6,6 +6,7 @@ import 'package:french/screens/formal.dart';
 import 'package:french/screens/informal.dart';
 import 'package:french/screens/splash.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
+import 'package:get/get.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -27,22 +28,17 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       home: DefaultTabController(
           length: 2,
           child: Scaffold(
             appBar: AppBar(
+              title: Text('Contents'),
+              centerTitle: true,
               backgroundColor: Color.fromRGBO(117, 218, 255, 1),
               actions: [
-                IconButton(
-                    onPressed: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: ((context) => Settings())));
-                    },
-                    icon: Icon(Icons.settings))
+                IconButton(onPressed: () {}, icon: Icon(Icons.settings))
               ],
               bottom: TabBar(indicatorColor: Colors.white, tabs: [
                 Tab(
