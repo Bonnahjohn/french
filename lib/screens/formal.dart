@@ -19,10 +19,6 @@ class _FormalsState extends State<Formals> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Color.fromRGBO(117, 218, 255, 1),
-        title: Text('Formal Letter'),
-      ),
       body: SafeArea(
           child: SingleChildScrollView(
         child: Padding(

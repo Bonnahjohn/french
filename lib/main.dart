@@ -1,10 +1,8 @@
 // ignore_for_file: prefer_const_constructors, unnecessary_import
 
 import 'package:flutter/material.dart';
-import 'package:french/screens/config.dart';
 import 'package:french/screens/formal.dart';
 import 'package:french/screens/informal.dart';
-import 'package:french/screens/media.dart';
 import 'package:french/screens/splash.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 
@@ -30,131 +28,22 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        appBar: AppBar(
-          backgroundColor: Color.fromRGBO(117, 218, 255, 1),
-          title: Text("French Letter Writing"),
-        ),
-        body: SafeArea(
-            child: SingleChildScrollView(
-          child: Padding(
-            padding: EdgeInsets.all(16.0),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: [
-                Text(
-                  Welcome,
-                  style: TextStyle(fontSize: 16),
+      home: DefaultTabController(
+          length: 2,
+          child: Scaffold(
+            appBar: AppBar(
+              backgroundColor: Color.fromRGBO(117, 218, 255, 1),
+              bottom: TabBar(indicatorColor: Colors.white, tabs: [
+                Tab(
+                  child: Text('Informal Letter'),
                 ),
-                SizedBox(
-                  height: 50,
-                ),
-                //mmmmmmmmmmmmmmmmmmmmmmmm
-                //Formal letter button
-                //mmmmmmmmmmmmmmmmmmmmm
-                TextButton.icon(
-                    style: ButtonStyle(
-                        shape: MaterialStateProperty.all<OutlinedBorder>(
-                          RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(10),
-                          ),
-                        ),
-                        backgroundColor: MaterialStatePropertyAll(
-                            Color.fromRGBO(117, 218, 255, 1))),
-                    onPressed: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: ((context) => Formals())));
-                    },
-                    icon: SizedBox(
-                      height: 40,
-                      width: 60,
-                      child: Image.asset('assets/images/letter.png',
-                          fit: BoxFit.contain),
-                    ),
-                    label: Text(
-                      'Formal Letter',
-                      style: TextStyle(fontSize: 19, color: Colors.white),
-                    )),
-                SizedBox(
-                  height: 20,
-                ),
-                //mmmmmmmmmmmmmmmmmmmmmmmm
-                //Informal letter button
-                //mmmmmmmmmmmmmmmmmmmmm
-                TextButton.icon(
-                  style: ButtonStyle(
-                    backgroundColor: MaterialStateProperty.all<Color>(
-                      Color.fromRGBO(117, 218, 255, 1),
-                    ),
-                    shape: MaterialStateProperty.all<OutlinedBorder>(
-                      RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                    ),
-                  ),
-                  onPressed: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: ((context) => Informals())));
-                  },
-                  icon: SizedBox(
-                    width: 60,
-                    height: 40,
-                    child: Image.asset(
-                      'assets/images/informal.png',
-                      fit: BoxFit.contain,
-                    ),
-                  ),
-                  label: Text(
-                    'Informal Letter',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 18,
-                    ),
-                  ),
-                ),
-                SizedBox(
-                  height: 20,
-                ),
-
-                //mmmmmmmmmmmmmmmmmmmmmmmm
-                //template button
-                //mmmmmmmmmmmmmmmmmmmmm
-                TextButton.icon(
-                  style: ButtonStyle(
-                    backgroundColor: MaterialStateProperty.all<Color>(
-                      Color.fromRGBO(117, 218, 255, 1),
-                    ),
-                    shape: MaterialStateProperty.all<OutlinedBorder>(
-                      RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                    ),
-                  ),
-                  onPressed: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: ((context) => Media())));
-                  },
-                  icon: SizedBox(
-                    width: 70,
-                    height: 40,
-                    child: Image.asset(
-                      'assets/images/gallery.png',
-                      fit: BoxFit.contain,
-                    ),
-                  ),
-                  label: Text(
-                    'Letter Samples',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 18,
-                    ),
-                  ),
+                Tab(
+                  child: Text('Formal Letter'),
                 )
-              ],
+              ]),
             ),
-          ),
-        )),
-      ),
+            body: TabBarView(children: [Informals(), Formals()]),
+          )),
     );
   }
 }
