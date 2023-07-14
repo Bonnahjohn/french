@@ -86,23 +86,6 @@ class About extends StatelessWidget {
               const SizedBox(
                 height: 30,
               ),
-              Card(
-                color: Colors.white54,
-                child: ListTile(
-                  leading: Icon(
-                    Icons.privacy_tip_outlined,
-                    size: 30,
-                  ),
-                  title: const Text(
-                    'Privacy Policy',
-                    style: TextStyle(fontSize: 16),
-                  ),
-                  onTap: () {
-                    launch(
-                        'https://sites.google.com/view/frenchify-privacy-policy/home');
-                  },
-                ),
-              ),
               const SizedBox(
                 height: 100,
               ),
