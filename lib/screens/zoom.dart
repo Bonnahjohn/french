@@ -32,7 +32,7 @@ class Zooma extends StatelessWidget {
                   ),
                   Text(
                     '1.',
-                    style: TextStyle(color: Colors.amber, fontSize: 30),
+                    style: TextStyle(color: Colors.red, fontSize: 30),
                   ),
                   GestureDetector(
                     child: Image.asset(
@@ -49,7 +49,7 @@ class Zooma extends StatelessWidget {
                   ),
                   Text(
                     '2.',
-                    style: TextStyle(color: Colors.amber, fontSize: 30),
+                    style: TextStyle(color: Colors.red, fontSize: 30),
                   ),
                   GestureDetector(
                     child: Image.asset(
@@ -66,7 +66,7 @@ class Zooma extends StatelessWidget {
                   ),
                   Text(
                     '3.',
-                    style: TextStyle(color: Colors.amber, fontSize: 30),
+                    style: TextStyle(color: Colors.red, fontSize: 30),
                   ),
                   GestureDetector(
                     child: Image.asset(
@@ -83,7 +83,7 @@ class Zooma extends StatelessWidget {
                   ),
                   Text(
                     '4.',
-                    style: TextStyle(color: Colors.amber, fontSize: 30),
+                    style: TextStyle(color: Colors.red, fontSize: 30),
                   ),
                   GestureDetector(
                     child: Image.asset(
