@@ -97,6 +97,10 @@ class _BurgerState extends State<Burger> {
               Icons.arrow_forward_ios_outlined,
               color: Colors.white,
             ),
+            onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: ((context) => Settings())));
+            },
           ),
 
           //mmmmmmmmmmmmmmmmmmmmmm  policy sector mmmmmmmmmmmm
@@ -178,5 +182,21 @@ class _BurgerState extends State<Burger> {
         ],
       ),
     );
+  }
+}
+
+// Settings file and its content  mmmmmmmmmmmmmmmmmmmm
+
+class Settings extends StatefulWidget {
+  const Settings({super.key});
+
+  @override
+  State<Settings> createState() => _SettingsState();
+}
+
+class _SettingsState extends State<Settings> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold();
   }
 }

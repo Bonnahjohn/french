@@ -3,6 +3,7 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:french/screens/feedback.dart';
+import 'package:french/screens/zoom.dart';
 import 'config.dart';
 import 'package:french/main.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
@@ -207,7 +208,7 @@ class _ParasState extends State<Paras> {
               recognizer: TapGestureRecognizer()
                 ..onTap = () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: ((context) => Media())));
+                      MaterialPageRoute(builder: ((context) => Sider())));
                 },
               text:
                   'Go to the media section to view sample of the formal letter writing images.\n',
