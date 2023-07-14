@@ -35,7 +35,14 @@ class _MyAppState extends State<MyApp> {
             appBar: AppBar(
               backgroundColor: Color.fromRGBO(117, 218, 255, 1),
               actions: [
-                IconButton(onPressed: () {}, icon: Icon(Icons.settings))
+                IconButton(
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: ((context) => Settings())));
+                    },
+                    icon: Icon(Icons.settings))
               ],
               bottom: TabBar(indicatorColor: Colors.white, tabs: [
                 Tab(

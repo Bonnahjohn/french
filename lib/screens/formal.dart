@@ -211,7 +211,7 @@ class _ParasState extends State<Paras> {
                       MaterialPageRoute(builder: ((context) => Sider())));
                 },
               text:
-                  'Go to the media section to view sample of the formal letter writing images.\n',
+                  'Tap here to view sample of the formal letter writing images.\n',
               style: TextStyle(color: Colors.blue)),
           TextSpan(
             text: '\nExample of the Formal letter',
